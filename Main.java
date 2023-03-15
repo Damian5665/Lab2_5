@@ -1,5 +1,6 @@
 import java.util.Random;
 import java.util.Scanner;
+import java.util.Arrays;
 class Main {
   public static void main(String[] args) {
    Scanner wybor = new Scanner(System.in);  
@@ -33,7 +34,7 @@ class Main {
             int[] x = new int[10];
             int l,s=0;
             Random rand = new Random();
-            for(l=0;i<11;i++)
+            for(l=0;l<10;l++)
               {
                 x[l] = rand.nextInt(101);
                 System.out.println(x[l]);
@@ -47,18 +48,13 @@ class Main {
             int[] x = new int[10];
             int l;
             Random rand = new Random();
-            for(l=0;i<11;i++)
+            for(l=0;l<10;l++)
               {
                 x[l] = rand.nextInt(101);
                 System.out.println(x[l]);
               }
-            Arrays.sort(numArray);
-            double mediana;
-            if (numArray.length % 2 == 0)
-                mediana = ((double)numArray[numArray.length/2] + (double)numArray[numArray.length/2 - 1])/2;
-            else
-                mediana = (double) numArray[numArray.length/2];
-            System.out.println(mediana);
+            Arrays.sort(x);
+            System.out.println("mediana: " + x[4]);
           }
       }
   }
