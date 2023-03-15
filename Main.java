@@ -4,7 +4,7 @@ import java.util.Arrays;
 class Main {
   public static void main(String[] args) {
    Scanner wybor = new Scanner(System.in);  
-    System.out.println("1 - Policz pole prostokta. 2- Policz pole 3 - losowe liczby i srednia 4- mediana");
+    System.out.println("1 - Policz pole prostokta. 2- Policz pole 3 - srednia 4 - mediana");
     int i = wybor.nextByte();
     
     switch(i)
